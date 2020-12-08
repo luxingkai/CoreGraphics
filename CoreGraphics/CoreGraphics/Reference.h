@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  Reference.h
 //  CoreGraphics
 //
 //  Created by tigerfly on 2020/12/8.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface Reference : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

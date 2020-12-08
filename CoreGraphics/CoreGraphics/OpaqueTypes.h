@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  OpaqueTypes.h
 //  CoreGraphics
 //
 //  Created by tigerfly on 2020/12/8.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+NS_ASSUME_NONNULL_BEGIN
 
-@property (nonatomic, strong) UIWindow *window;
+@interface OpaqueTypes : UIViewController
+
 @end
 
+NS_ASSUME_NONNULL_END
