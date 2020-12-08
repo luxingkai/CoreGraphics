@@ -18,6 +18,22 @@
 		11E6054A257F4AC9004AE097 /* Services.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E60549257F4AC9004AE097 /* Services.m */; };
 		11E6054D257F4ADC004AE097 /* Reference.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E6054C257F4ADC004AE097 /* Reference.m */; };
 		11E60550257F4B64004AE097 /* CoreGraphicsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E6054F257F4B64004AE097 /* CoreGraphicsController.m */; };
+		11E60556257F62AC004AE097 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E60555257F62AC004AE097 /* DrawView.m */; };
+		11E60559257F9866004AE097 /* OverviewOfQuartz2D.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E60558257F9866004AE097 /* OverviewOfQuartz2D.m */; };
+		11E6055C257F987B004AE097 /* GraphicsContexts.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E6055B257F987B004AE097 /* GraphicsContexts.m */; };
+		11E6055F257F9885004AE097 /* Paths.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E6055E257F9885004AE097 /* Paths.m */; };
+		11E60562257F989A004AE097 /* ColorAndColorSpaces.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E60561257F989A004AE097 /* ColorAndColorSpaces.m */; };
+		11E60565257F98A6004AE097 /* Transforms.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E60564257F98A6004AE097 /* Transforms.m */; };
+		11E60568257F98B5004AE097 /* Patterns.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E60567257F98B5004AE097 /* Patterns.m */; };
+		11E6056B257F98C0004AE097 /* Shadows.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E6056A257F98C0004AE097 /* Shadows.m */; };
+		11E6056E257F98CF004AE097 /* Gradients.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E6056D257F98CF004AE097 /* Gradients.m */; };
+		11E60571257F98E7004AE097 /* TransparencyLayers.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E60570257F98E7004AE097 /* TransparencyLayers.m */; };
+		11E60574257F9903004AE097 /* DataManagementInQuartz2D.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E60573257F9903004AE097 /* DataManagementInQuartz2D.m */; };
+		11E60577257F9921004AE097 /* BitmapImagesAndImageMasks.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E60576257F9921004AE097 /* BitmapImagesAndImageMasks.m */; };
+		11E6057A257F9939004AE097 /* CoreGraphicsLayerDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E60579257F9939004AE097 /* CoreGraphicsLayerDrawing.m */; };
+		11E6057D257F994B004AE097 /* PDFDocumentCreation.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E6057C257F994B004AE097 /* PDFDocumentCreation.m */; };
+		11E60580257F9965004AE097 /* PDFDocumentParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E6057F257F9965004AE097 /* PDFDocumentParsing.m */; };
+		11E60583257F9996004AE097 /* PostScriptConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E60582257F9996004AE097 /* PostScriptConversion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +76,38 @@
 		11E6054C257F4ADC004AE097 /* Reference.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Reference.m; sourceTree = "<group>"; };
 		11E6054E257F4B64004AE097 /* CoreGraphicsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsController.h; sourceTree = "<group>"; };
 		11E6054F257F4B64004AE097 /* CoreGraphicsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsController.m; sourceTree = "<group>"; };
+		11E60554257F62AC004AE097 /* DrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
+		11E60555257F62AC004AE097 /* DrawView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
+		11E60557257F9866004AE097 /* OverviewOfQuartz2D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverviewOfQuartz2D.h; sourceTree = "<group>"; };
+		11E60558257F9866004AE097 /* OverviewOfQuartz2D.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverviewOfQuartz2D.m; sourceTree = "<group>"; };
+		11E6055A257F987B004AE097 /* GraphicsContexts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphicsContexts.h; sourceTree = "<group>"; };
+		11E6055B257F987B004AE097 /* GraphicsContexts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphicsContexts.m; sourceTree = "<group>"; };
+		11E6055D257F9885004AE097 /* Paths.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Paths.h; sourceTree = "<group>"; };
+		11E6055E257F9885004AE097 /* Paths.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Paths.m; sourceTree = "<group>"; };
+		11E60560257F989A004AE097 /* ColorAndColorSpaces.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorAndColorSpaces.h; sourceTree = "<group>"; };
+		11E60561257F989A004AE097 /* ColorAndColorSpaces.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorAndColorSpaces.m; sourceTree = "<group>"; };
+		11E60563257F98A6004AE097 /* Transforms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Transforms.h; sourceTree = "<group>"; };
+		11E60564257F98A6004AE097 /* Transforms.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Transforms.m; sourceTree = "<group>"; };
+		11E60566257F98B5004AE097 /* Patterns.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Patterns.h; sourceTree = "<group>"; };
+		11E60567257F98B5004AE097 /* Patterns.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Patterns.m; sourceTree = "<group>"; };
+		11E60569257F98C0004AE097 /* Shadows.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shadows.h; sourceTree = "<group>"; };
+		11E6056A257F98C0004AE097 /* Shadows.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Shadows.m; sourceTree = "<group>"; };
+		11E6056C257F98CF004AE097 /* Gradients.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Gradients.h; sourceTree = "<group>"; };
+		11E6056D257F98CF004AE097 /* Gradients.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Gradients.m; sourceTree = "<group>"; };
+		11E6056F257F98E7004AE097 /* TransparencyLayers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransparencyLayers.h; sourceTree = "<group>"; };
+		11E60570257F98E7004AE097 /* TransparencyLayers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransparencyLayers.m; sourceTree = "<group>"; };
+		11E60572257F9903004AE097 /* DataManagementInQuartz2D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManagementInQuartz2D.h; sourceTree = "<group>"; };
+		11E60573257F9903004AE097 /* DataManagementInQuartz2D.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManagementInQuartz2D.m; sourceTree = "<group>"; };
+		11E60575257F9921004AE097 /* BitmapImagesAndImageMasks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BitmapImagesAndImageMasks.h; sourceTree = "<group>"; };
+		11E60576257F9921004AE097 /* BitmapImagesAndImageMasks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BitmapImagesAndImageMasks.m; sourceTree = "<group>"; };
+		11E60578257F9939004AE097 /* CoreGraphicsLayerDrawing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsLayerDrawing.h; sourceTree = "<group>"; };
+		11E60579257F9939004AE097 /* CoreGraphicsLayerDrawing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsLayerDrawing.m; sourceTree = "<group>"; };
+		11E6057B257F994B004AE097 /* PDFDocumentCreation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFDocumentCreation.h; sourceTree = "<group>"; };
+		11E6057C257F994B004AE097 /* PDFDocumentCreation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFDocumentCreation.m; sourceTree = "<group>"; };
+		11E6057E257F9965004AE097 /* PDFDocumentParsing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFDocumentParsing.h; sourceTree = "<group>"; };
+		11E6057F257F9965004AE097 /* PDFDocumentParsing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFDocumentParsing.m; sourceTree = "<group>"; };
+		11E60581257F9996004AE097 /* PostScriptConversion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostScriptConversion.h; sourceTree = "<group>"; };
+		11E60582257F9996004AE097 /* PostScriptConversion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostScriptConversion.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +200,8 @@
 				11E60549257F4AC9004AE097 /* Services.m */,
 				11E6054B257F4ADC004AE097 /* Reference.h */,
 				11E6054C257F4ADC004AE097 /* Reference.m */,
+				11E60554257F62AC004AE097 /* DrawView.h */,
+				11E60555257F62AC004AE097 /* DrawView.m */,
 			);
 			path = CoreGraphics;
 			sourceTree = "<group>";
@@ -159,6 +209,36 @@
 		11E60544257F49B9004AE097 /* QuartzCore */ = {
 			isa = PBXGroup;
 			children = (
+				11E60557257F9866004AE097 /* OverviewOfQuartz2D.h */,
+				11E60558257F9866004AE097 /* OverviewOfQuartz2D.m */,
+				11E6055A257F987B004AE097 /* GraphicsContexts.h */,
+				11E6055B257F987B004AE097 /* GraphicsContexts.m */,
+				11E6055D257F9885004AE097 /* Paths.h */,
+				11E6055E257F9885004AE097 /* Paths.m */,
+				11E60560257F989A004AE097 /* ColorAndColorSpaces.h */,
+				11E60561257F989A004AE097 /* ColorAndColorSpaces.m */,
+				11E60563257F98A6004AE097 /* Transforms.h */,
+				11E60564257F98A6004AE097 /* Transforms.m */,
+				11E60566257F98B5004AE097 /* Patterns.h */,
+				11E60567257F98B5004AE097 /* Patterns.m */,
+				11E60569257F98C0004AE097 /* Shadows.h */,
+				11E6056A257F98C0004AE097 /* Shadows.m */,
+				11E6056C257F98CF004AE097 /* Gradients.h */,
+				11E6056D257F98CF004AE097 /* Gradients.m */,
+				11E6056F257F98E7004AE097 /* TransparencyLayers.h */,
+				11E60570257F98E7004AE097 /* TransparencyLayers.m */,
+				11E60572257F9903004AE097 /* DataManagementInQuartz2D.h */,
+				11E60573257F9903004AE097 /* DataManagementInQuartz2D.m */,
+				11E60575257F9921004AE097 /* BitmapImagesAndImageMasks.h */,
+				11E60576257F9921004AE097 /* BitmapImagesAndImageMasks.m */,
+				11E60578257F9939004AE097 /* CoreGraphicsLayerDrawing.h */,
+				11E60579257F9939004AE097 /* CoreGraphicsLayerDrawing.m */,
+				11E6057B257F994B004AE097 /* PDFDocumentCreation.h */,
+				11E6057C257F994B004AE097 /* PDFDocumentCreation.m */,
+				11E6057E257F9965004AE097 /* PDFDocumentParsing.h */,
+				11E6057F257F9965004AE097 /* PDFDocumentParsing.m */,
+				11E60581257F9996004AE097 /* PostScriptConversion.h */,
+				11E60582257F9996004AE097 /* PostScriptConversion.m */,
 			);
 			path = QuartzCore;
 			sourceTree = "<group>";
@@ -293,12 +373,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11E60559257F9866004AE097 /* OverviewOfQuartz2D.m in Sources */,
+				11E60568257F98B5004AE097 /* Patterns.m in Sources */,
 				11E60547257F4AAE004AE097 /* OpaqueTypes.m in Sources */,
+				11E6056B257F98C0004AE097 /* Shadows.m in Sources */,
+				11E60565257F98A6004AE097 /* Transforms.m in Sources */,
+				11E6057A257F9939004AE097 /* CoreGraphicsLayerDrawing.m in Sources */,
+				11E60574257F9903004AE097 /* DataManagementInQuartz2D.m in Sources */,
+				11E6056E257F98CF004AE097 /* Gradients.m in Sources */,
+				11E6055F257F9885004AE097 /* Paths.m in Sources */,
+				11E6055C257F987B004AE097 /* GraphicsContexts.m in Sources */,
 				11E6054A257F4AC9004AE097 /* Services.m in Sources */,
+				11E60571257F98E7004AE097 /* TransparencyLayers.m in Sources */,
 				11E6054D257F4ADC004AE097 /* Reference.m in Sources */,
 				11E60510257F493D004AE097 /* AppDelegate.m in Sources */,
+				11E60583257F9996004AE097 /* PostScriptConversion.m in Sources */,
+				11E60562257F989A004AE097 /* ColorAndColorSpaces.m in Sources */,
+				11E60577257F9921004AE097 /* BitmapImagesAndImageMasks.m in Sources */,
+				11E60556257F62AC004AE097 /* DrawView.m in Sources */,
 				11E60521257F493F004AE097 /* main.m in Sources */,
+				11E6057D257F994B004AE097 /* PDFDocumentCreation.m in Sources */,
 				11E60550257F4B64004AE097 /* CoreGraphicsController.m in Sources */,
+				11E60580257F9965004AE097 /* PDFDocumentParsing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

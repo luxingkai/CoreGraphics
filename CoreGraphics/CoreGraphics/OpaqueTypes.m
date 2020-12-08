@@ -250,10 +250,402 @@
     
 #pragma mark -- CGContext
     
+    /*
+     A Quartz 2D drawing destination.
+
+     A graphics context contains drawing parameters and
+     all device-specific information needed to render the
+     paint on a page to the destination, whether the destination
+     is a window in an application, a bitmap image, a PDF
+     document, or a printer. You can obtain a graphics context
+     by using Quartz graphics context creation functions or
+     by using higher-level functions provided in the Carbon,
+     Cocoa, or Printing frameworks. Quartz provides creation
+     functions for various flavors of Quartz graphics contexts
+     including bitmap images and PDF. The Cocoa framework
+     provides functions for obtaining window graphics contexts.
+     The Printing framework provides functions that obtain a
+     graphics context appropriate for the destination printer.
+     */
+    
+    /**
+     Managing Graphics Contexts
+     */
+//    CGContextFlush(<#CGContextRef  _Nullable c#>)
+//    CGContextGetTypeID()
+//    CGContextRelease(<#CGContextRef  _Nullable c#>)
+//    CGContextRetain(<#CGContextRef  _Nullable c#>)
+//    CGContextSynchronize(<#CGContextRef  _Nullable c#>)
+    
+    /**
+     Saving and Restoring the Current Graphics State
+     */
+//    CGContextSaveGState(<#CGContextRef  _Nullable c#>)
+//    CGContextRestoreGState(<#CGContextRef  _Nullable c#>)
+    
+    
+    /**
+     Getting and Setting Graphics State Parameters
+     */
+//    CGContextGetInterpolationQuality(<#CGContextRef  _Nullable c#>)
+//    CGContextSetFlatness(<#CGContextRef  _Nullable c#>, <#CGFloat flatness#>)
+//    CGContextSetInterpolationQuality(<#CGContextRef  _Nullable c#>, <#CGInterpolationQuality quality#>)
+//    CGContextSetLineCap(<#CGContextRef  _Nullable c#>, <#CGLineCap cap#>)
+//    CGContextSetLineDash(<#CGContextRef  _Nullable c#>, <#CGFloat phase#>, <#const CGFloat * _Nullable lengths#>, <#size_t count#>)
+//    CGContextSetLineJoin(<#CGContextRef  _Nullable c#>, <#CGLineJoin join#>)
+//    CGContextSetLineWidth(<#CGContextRef  _Nullable c#>, <#CGFloat width#>)
+//    CGContextSetMiterLimit(<#CGContextRef  _Nullable c#>, <#CGFloat limit#>)
+//    CGContextSetPatternPhase(<#CGContextRef  _Nullable c#>, <#CGSize phase#>)
+//    CGContextSetFillPattern(<#CGContextRef  _Nullable c#>, <#CGPatternRef  _Nullable pattern#>, <#const CGFloat * _Nullable components#>)
+//    CGContextSetRenderingIntent(<#CGContextRef  _Nullable c#>, <#CGColorRenderingIntent intent#>)
+//    CGContextSetShouldAntialias(<#CGContextRef  _Nullable c#>, <#bool shouldAntialias#>)
+//    CGContextSetStrokePattern(<#CGContextRef  _Nullable c#>, <#CGPatternRef  _Nullable pattern#>, <#const CGFloat * _Nullable components#>)
+//    CGContextSetBlendMode(<#CGContextRef  _Nullable c#>, <#CGBlendMode mode#>)
+//    CGContextSetAllowsAntialiasing(<#CGContextRef  _Nullable c#>, <#bool allowsAntialiasing#>)
+//    CGContextSetAllowsFontSmoothing(<#CGContextRef  _Nullable c#>, <#bool allowsFontSmoothing#>)
+//    CGContextSetShouldSmoothFonts(<#CGContextRef  _Nullable c#>, <#bool shouldSmoothFonts#>)
+//    CGContextSetAllowsFontSubpixelPositioning(<#CGContextRef  _Nullable c#>, <#bool allowsFontSubpixelPositioning#>)
+//    CGContextSetShouldSubpixelPositionFonts(<#CGContextRef  _Nullable c#>, <#bool shouldSubpixelPositionFonts#>)
+//    CGContextSetAllowsFontSubpixelQuantization(<#CGContextRef  _Nullable c#>, <#bool allowsFontSubpixelQuantization#>)
+//    CGContextSetShouldSubpixelQuantizeFonts(<#CGContextRef  _Nullable c#>, <#bool shouldSubpixelQuantizeFonts#>)
+    
+    
+    /**
+     Constructing Paths
+     
+     These functions are used to define the geometry of the
+     current path, For more information on how paths are
+     defined, see CGPath,
+     */
+//    CGContextAddArc(<#CGContextRef  _Nullable c#>, <#CGFloat x#>, <#CGFloat y#>, <#CGFloat radius#>, <#CGFloat startAngle#>, <#CGFloat endAngle#>, <#int clockwise#>)
+//    CGContextAddArcToPoint(<#CGContextRef  _Nullable c#>, <#CGFloat x1#>, <#CGFloat y1#>, <#CGFloat x2#>, <#CGFloat y2#>, <#CGFloat radius#>)
+//    CGContextAddCurveToPoint(<#CGContextRef  _Nullable c#>, <#CGFloat cp1x#>, <#CGFloat cp1y#>, <#CGFloat cp2x#>, <#CGFloat cp2y#>, <#CGFloat x#>, <#CGFloat y#>)
+//    CGContextAddLines(<#CGContextRef  _Nullable c#>, <#const CGPoint * _Nullable points#>, <#size_t count#>)
+//    CGContextAddLineToPoint(<#CGContextRef  _Nullable c#>, <#CGFloat x#>, <#CGFloat y#>)
+//    CGContextAddPath(<#CGContextRef  _Nullable c#>, <#CGPathRef  _Nullable path#>)
+//    CGContextCopyPath(<#CGContextRef  _Nullable c#>)
+//    CGContextAddQuadCurveToPoint(<#CGContextRef  _Nullable c#>, <#CGFloat cpx#>, <#CGFloat cpy#>, <#CGFloat x#>, <#CGFloat y#>)
+//    CGContextAddRect(<#CGContextRef  _Nullable c#>, <#CGRect rect#>)
+//    CGContextAddRects(<#CGContextRef  _Nullable c#>, <#const CGRect * _Nullable rects#>, <#size_t count#>)
+//    CGContextBeginPath(<#CGContextRef  _Nullable c#>)
+//    CGContextClosePath(<#CGContextRef  _Nullable c#>)
+//    CGContextMoveToPoint(<#CGContextRef  _Nullable c#>, <#CGFloat x#>, <#CGFloat y#>)
+//    CGContextAddEllipseInRect(<#CGContextRef  _Nullable c#>, <#CGRect rect#>)
+    
+    
+    /**
+     Painting Paths
+     
+     These functions are used to stroke along or fill in the
+     current path.
+     */
+//    CGContextClearRect(<#CGContextRef  _Nullable c#>, <#CGRect rect#>)
+//    CGContextDrawPath(<#CGContextRef  _Nullable c#>, <#CGPathDrawingMode mode#>)
+//    CGContextEOFillPath(<#CGContextRef  _Nullable c#>)
+//    CGContextFillPath(<#CGContextRef  _Nullable c#>)
+//    CGContextFillRect(<#CGContextRef  _Nullable c#>, <#CGRect rect#>)
+//    CGContextFillRects(<#CGContextRef  _Nullable c#>, <#const CGRect * _Nullable rects#>, <#size_t count#>)
+//    CGContextFillEllipseInRect(<#CGContextRef  _Nullable c#>, <#CGRect rect#>)
+//    CGContextStrokePath(<#CGContextRef  _Nullable c#>)
+//    CGContextStrokeRect(<#CGContextRef  _Nullable c#>, <#CGRect rect#>)
+//    CGContextStrokeRectWithWidth(<#CGContextRef  _Nullable c#>, <#CGRect rect#>, <#CGFloat width#>)
+//    CGContextReplacePathWithStrokedPath(<#CGContextRef  _Nullable c#>)
+//    CGContextStrokeEllipseInRect(<#CGContextRef  _Nullable c#>, <#CGRect rect#>)
+//CGContextStrokeLineSegments(<#CGContextRef  _Nullable c#>, <#const CGPoint * _Nullable points#>, <#size_t count#>)
+    
+    
+    /**
+     Getting information About Paths
+     */
+//    CGContextIsPathEmpty(<#CGContextRef  _Nullable c#>)
+//    CGContextGetPathCurrentPoint(<#CGContextRef  _Nullable c#>)
+//    CGContextGetPathBoundingBox(<#CGContextRef  _Nullable c#>)
+//    CGContextPathContainsPoint(<#CGContextRef  _Nullable c#>, <#CGPoint point#>, <#CGPathDrawingMode mode#>)
+    
+    
+    /**
+     Modifying Clipping Paths
+     */
+//    CGContextClip(<#CGContextRef  _Nullable c#>)
+//    CGContextEOClip(<#CGContextRef  _Nullable c#>)
+//    CGContextClipToRect(<#CGContextRef  _Nullable c#>, <#CGRect rect#>)
+//    CGContextClipToRects(<#CGContextRef  _Nullable c#>, <#const CGRect * _Nonnull rects#>, <#size_t count#>)
+//    CGContextGetClipBoundingBox(<#CGContextRef  _Nullable c#>)
+//    CGContextClipToMask(<#CGContextRef  _Nullable c#>, <#CGRect rect#>, <#CGImageRef  _Nullable mask#>)
+    
+    
+    /**
+     Setting Color, Color Space, and Shadow Values
+     */
+//    CGContextSetAlpha(<#CGContextRef  _Nullable c#>, <#CGFloat alpha#>)
+//    CGContextSetCMYKFillColor(<#CGContextRef  _Nullable c#>, <#CGFloat cyan#>, <#CGFloat magenta#>, <#CGFloat yellow#>, <#CGFloat black#>, <#CGFloat alpha#>)
+//    CGContextSetFillColor(<#CGContextRef  _Nullable c#>, <#const CGFloat * _Nullable components#>)
+//    CGContextSetCMYKStrokeColor(<#CGContextRef  _Nullable c#>, <#CGFloat cyan#>, <#CGFloat magenta#>, <#CGFloat yellow#>, <#CGFloat black#>, <#CGFloat alpha#>)
+//    CGContextSetFillColorSpace(<#CGContextRef  _Nullable c#>, <#CGColorSpaceRef  _Nullable space#>)
+//    CGContextSetFillColorWithColor(<#CGContextRef  _Nullable c#>, <#CGColorRef  _Nullable color#>)
+//    CGContextSetGrayFillColor(<#CGContextRef  _Nullable c#>, <#CGFloat gray#>, <#CGFloat alpha#>)
+//    CGContextSetGrayStrokeColor(<#CGContextRef  _Nullable c#>, <#CGFloat gray#>, <#CGFloat alpha#>)
+//    CGContextSetRGBFillColor(<#CGContextRef  _Nullable c#>, <#CGFloat red#>, <#CGFloat green#>, <#CGFloat blue#>, <#CGFloat alpha#>)
+//    CGContextSetRGBStrokeColor(<#CGContextRef  _Nullable c#>, <#CGFloat red#>, <#CGFloat green#>, <#CGFloat blue#>, <#CGFloat alpha#>)
+//    CGContextSetShadow(<#CGContextRef  _Nullable c#>, <#CGSize offset#>, <#CGFloat blur#>)
+//    CGContextSetShadowWithColor(<#CGContextRef  _Nullable c#>, <#CGSize offset#>, <#CGFloat blur#>, <#CGColorRef  _Nullable color#>)
+//    CGContextSetStrokeColor(<#CGContextRef  _Nullable c#>, <#const CGFloat * _Nullable components#>)
+//    CGContextSetStrokeColorSpace(<#CGContextRef  _Nullable c#>, <#CGColorSpaceRef  _Nullable space#>)
+//    CGContextSetStrokeColorWithColor(<#CGContextRef  _Nullable c#>, <#CGColorRef  _Nullable color#>)
+    
+    
+    /**
+     Transforming User Space
+
+     These functions allow you to examine and change the current
+     transformation matrix(CTM) in a graphics context.
+     */
+//    CGContextConcatCTM(<#CGContextRef  _Nullable c#>, <#CGAffineTransform transform#>)
+//    CGContextGetCTM(<#CGContextRef  _Nullable c#>)
+//    CGContextRotateCTM(<#CGContextRef  _Nullable c#>, <#CGFloat angle#>)
+//    CGContextScaleCTM(<#CGContextRef  _Nullable c#>, <#CGFloat sx#>, <#CGFloat sy#>)
+//    CGContextTranslateCTM(<#CGContextRef  _Nullable c#>, <#CGFloat tx#>, <#CGFloat ty#>)
+    
+    
+    /**
+     Using Transparency Layers
+     */
+//    CGContextBeginTransparencyLayer(<#CGContextRef  _Nullable c#>, <#CFDictionaryRef  _Nullable auxiliaryInfo#>)
+//    CGContextBeginTransparencyLayerWithRect(<#CGContextRef  _Nullable c#>, <#CGRect rect#>, <#CFDictionaryRef  _Nullable auxInfo#>)
+//    CGContextEndTransparencyLayer(<#CGContextRef  _Nullable c#>)
+ 
+    
+    /**
+     Drawing an Image to a Graphics Context
+     */
+//    CGContextDrawTiledImage(<#CGContextRef  _Nullable c#>, <#CGRect rect#>, <#CGImageRef  _Nullable image#>)
+//    CGContextDrawImage(<#CGContextRef  _Nullable c#>, <#CGRect rect#>, <#CGImageRef  _Nullable image#>)
+    
+    /**
+     Drawing PDF Content to a Graphics Context
+     */
+//    CGContextDrawPDFPage(<#CGContextRef  _Nullable c#>, <#CGPDFPageRef  _Nullable page#>)
+    
+    /**
+     Drawing With a Gradient
+     */
+//    CGContextDrawLinearGradient(<#CGContextRef  _Nullable c#>, <#CGGradientRef  _Nullable gradient#>, <#CGPoint startPoint#>, <#CGPoint endPoint#>, <#CGGradientDrawingOptions options#>)
+//    CGContextDrawRadialGradient(<#CGContextRef  _Nullable c#>, <#CGGradientRef  _Nullable gradient#>, <#CGPoint startCenter#>, <#CGFloat startRadius#>, <#CGPoint endCenter#>, <#CGFloat endRadius#>, <#CGGradientDrawingOptions options#>)
+    
+    /**
+     Drawing With a Shading
+     */
+//    CGContextDrawShading(<#CGContextRef  _Nullable c#>, <#CGShadingRef  _Nullable shading#>)
+    
+    
+    /**
+     Setting Up a Page-Based Graphics Context
+     */
+//    CGContextBeginPage(<#CGContextRef  _Nullable c#>, <#const CGRect * _Nullable mediaBox#>)
+//    CGContextEndPage(<#CGContextRef  _Nullable c#>)
+    
+    
+    /**
+     Drawing Text
+     */
+//    CGContextGetTextMatrix(<#CGContextRef  _Nullable c#>)
+//    CGContextGetTextPosition(<#CGContextRef  _Nullable c#>)
+//    CGContextSetCharacterSpacing(<#CGContextRef  _Nullable c#>, <#CGFloat spacing#>)
+//    CGContextSetFont(<#CGContextRef  _Nullable c#>, <#CGFontRef  _Nullable font#>)
+//    CGContextSetFontSize(<#CGContextRef  _Nullable c#>, <#CGFloat size#>)
+//    CGContextSetTextDrawingMode(<#CGContextRef  _Nullable c#>, <#CGTextDrawingMode mode#>)
+//    CGContextSetTextMatrix(<#CGContextRef  _Nullable c#>, <#CGAffineTransform t#>)
+//    CGContextSetTextPosition(<#CGContextRef  _Nullable c#>, <#CGFloat x#>, <#CGFloat y#>)
+    
+    
+    /**
+     Converting Between Device Space and User Space
+     */
+//    CGContextGetUserSpaceToDeviceSpaceTransform(<#CGContextRef  _Nullable c#>)
+//    CGContextConvertPointToDeviceSpace(<#CGContextRef  _Nullable c#>, <#CGPoint point#>)
+//    CGContextConvertPointToUserSpace(<#CGContextRef  _Nullable c#>, <#CGPoint point#>)
+//    CGContextConvertPointToDeviceSpace(<#CGContextRef  _Nullable c#>, <#CGPoint point#>)
+//    CGContextConvertSizeToUserSpace(<#CGContextRef  _Nullable c#>, <#CGSize size#>)
+//    CGContextConvertRectToDeviceSpace(<#CGContextRef  _Nullable c#>, <#CGRect rect#>)
+//    CGContextConvertRectToUserSpace(<#CGContextRef  _Nullable c#>, <#CGRect rect#>)
+    
+    /**
+     Data Types
+     */
+//    CGContextRef
+    
+    
+#pragma mark -- CGDataConsumer
+    
+    /*
+     An abstraction for data-writing tasks that eliminates the
+     need to manage a raw memory buffer.
+     
+     Most apps should use CGImageDestination objects instead. See
+     CGImageDestination.
+     */
+    
+    /**
+     Creating Data Consumers
+     */
+//    CGDataConsumerCreate(<#void * _Nullable info#>, <#const CGDataConsumerCallbacks * _Nullable cbks#>)
+//    CGDataConsumerCreateWithURL(<#CFURLRef  _Nullable url#>)
+//    CGDataConsumerCreateWithCFData(<#CFMutableDataRef  _Nullable data#>)
+    
+    /**
+     Getting the CFType ID
+     */
+//    CGDataConsumerGetTypeID()
+    
+    /**
+     Retaining and Releasing Data Consumers
+     */
+//    CGDataConsumerRelease(<#CGDataConsumerRef  _Nullable consumer#>)
+//    CGDataConsumerRetain(<#CGDataConsumerRef  _Nullable consumer#>)
+    
+    /**
+     Callbacks
+     */
+//    CGDataConsumerPutBytesCallback
+//    CGDataConsumerReleaseInfoCallback
+    
+    /**
+     Data Types
+     */
+//    CGDataConsumerCallbacks
+//    CGDataConsumerRef
+    
+    
+#pragma mark -- CGDataProvider
+    
+    /*
+     An abstraction for data-reading tasks that eliminates the need
+     to manage a raw memory buffer.
+     
+     Data provider objects abstract the data-access task and
+     eliminate the need for applications to manage data through
+     a raw memory buffer.
+     For information on how to use CGDataProvider functions,
+     see Quartz 2D Programming Guide Programming Guide.
+     See also CGDataConsumer.
+     */
+    
+    /**
+     CGDataProviderMiscellaneousFunctions
+     */
+//    CGDataProviderCreateDirect(<#void * _Nullable info#>, <#off_t size#>, <#const CGDataProviderDirectCallbacks * _Nullable callbacks#>)
+//    CGDataProviderCreateWithURL(<#CFURLRef  _Nullable url#>)
+//    CGDataProviderCreateWithData(<#void * _Nullable info#>, <#const void * _Nullable data#>, <#size_t size#>, <#CGDataProviderReleaseDataCallback  _Nullable releaseData#>)
+//    CGDataProviderCreateWithCFData(<#CFDataRef  _Nullable data#>)
+//    CGDataProviderCreateWithFilename(<#const char * _Nullable filename#>)
+//    CGDataProviderGetTypeID()
+//    CGDataProviderCopyData(<#CGDataProviderRef  _Nullable provider#>)
+//    CGDataProviderRelease(<#CGDataProviderRef  _Nullable provider#>)
+//    CGDataProviderRetain(<#CGDataProviderRef  _Nullable provider#>)
+//    CGDataProviderCreateSequential(<#void * _Nullable info#>, <#const CGDataProviderSequentialCallbacks * _Nullable callbacks#>)
+        
+    
+    /**
+     Callbacks
+     */
+    
+//    CGDataProviderGetBytesCallback
+//    CGDataProviderReleaseInfoCallback
+//    CGDataProviderRewindCallback
+//    CGDataProviderSkipForwardCallback
+//    CGDataProviderGetBytePointerCallback
+//    CGDataProviderGetBytesAtPositionCallback
+//    CGDataProviderReleaseDataCallback
+//    CGDataProviderReleaseBytePointerCallback
+        
+    /**
+     Data Types
+     */
+//    CGDataProviderRef
+//    CGDataProviderDirectCallbacks
+//    CGDataProviderSequentialCallbacks
+
+
+#pragma mark -- CGFont
+
+    /*
+     A set of character glyphs and layout information
+     for drawing text.
+     A font is a set fo shapes or glyphs associated with
+     a character set. A glyph can repersent a single character
+     (such as 'b'), more than one character(such as the
+     'fi' ligature), or a special character such as a space.
+     Core Graphics retrieves the glyphs based on the relevant
+     parameters of the current graphics state.
+     
+     Core Graphics provides a limited, low-level interface
+     for drawing text. For information on text-drawing
+     functions, see CGContext. For full Unicode an text-layout
+     support, use the services provided by TextKit).
+     */
+    
+    /**
+     Retaining and Releasing a CGFont Object
+     */
+//    CGFontRelease(<#CGFontRef  _Nullable font#>)
+//    CGFontRetain(<#CGFontRef  _Nullable font#>)
+    
+    /**
+     Creating a CGFont Object
+     */
+//    CGFontCreateWithDataProvider(<#CGDataProviderRef  _Nullable provider#>)
+//    CGFontCreateWithFontName(<#CFStringRef  _Nullable name#>)
+//    CGFontCreateCopyWithVariations(<#CGFontRef  _Nullable font#>, <#CFDictionaryRef  _Nullable variations#>)
+    
+    /**
+     Working with PostScript Fonts
+     */
+//    CGFontCopyPostScriptName(<#CGFontRef  _Nullable font#>)
+//CGFontCanCreatePostScriptSubset(<#CGFontRef  _Nullable font#>, <#CGFontPostScriptFormat format#>)
+//    CGFontCreatePostScriptSubset(<#CGFontRef  _Nullable font#>, <#CFStringRef  _Nullable subsetName#>, <#CGFontPostScriptFormat format#>, <#const CGGlyph * _Nullable glyphs#>, <#size_t count#>, <#const CGGlyph * _Nullable encoding#>)
+//    CGFontCreatePostScriptEncoding(<#CGFontRef  _Nullable font#>, <#const CGGlyph * _Nullable encoding#>)
+    
+    /**
+     Working with Font Tables
+     */
+//    CGFontCopyTableTags(<#CGFontRef  _Nullable font#>)
+//    CGFontCopyTableForTag(<#CGFontRef  _Nullable font#>, <#uint32_t tag#>)
+    
+    /**
+     Getting Font Information
+     */
+//    CGFontGetTypeID()
+//    CGFontCopyVariationAxes(<#CGFontRef  _Nullable font#>)
+//    CGFontCopyVariations(<#CGFontRef  _Nullable font#>)
+//    CGFontCopyFullName(<#CGFontRef  _Nullable font#>)
+//    CGFontGetAscent(<#CGFontRef  _Nullable font#>)
+//    CGFontGetDescent(<#CGFontRef  _Nullable font#>)
+//    CGFontGetLeading(<#CGFontRef  _Nullable font#>)
+//    CGFontGetCapHeight(<#CGFontRef  _Nullable font#>)
+//    CGFontGetXHeight(<#CGFontRef  _Nullable font#>)
+//    CGFontGetFontBBox(<#CGFontRef  _Nullable font#>)
+//    CGFontGetItalicAngle(<#CGFontRef  _Nullable font#>)
+//    CGFontGetStemV(<#CGFontRef  _Nullable font#>)
+//    CGFontGetGlyphBBoxes(<#CGFontRef  _Nullable font#>, <#const CGGlyph * _Nonnull glyphs#>, <#size_t count#>, <#CGRect * _Nonnull bboxes#>)
+//    CGFontGetGlyphWithGlyphName(<#CGFontRef  _Nullable font#>, <#CFStringRef  _Nullable name#>)
+//    CGFontCopyGlyphNameForGlyph(<#CGFontRef  _Nullable font#>, <#CGGlyph glyph#>)
+//    CGFontGetNumberOfGlyphs(<#CGFontRef  _Nullable font#>)
+//    CGFontGetGlyphAdvances(<#CGFontRef  _Nullable font#>, <#const CGGlyph * _Nonnull glyphs#>, <#size_t count#>, <#int * _Nonnull advances#>)
+//    CGFontGetUnitsPerEm(<#CGFontRef  _Nullable font#>)
+    
+    /**
+     Data Types
+     */
+//    CGFontRef
+//    CGFontIndex
+//    CGGlyph
+    
     
     
     
 }
+
+
 
 
 /*

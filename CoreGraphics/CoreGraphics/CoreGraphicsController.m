@@ -7,12 +7,15 @@
 //
 
 #import "CoreGraphicsController.h"
+#import "DrawView.h"
 
 @interface CoreGraphicsController ()
 
 @end
 
 @implementation CoreGraphicsController
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,20 +37,23 @@
      In macOS, Core Graphics also includes services for working with
      display hardware, low-level user input events, and the windowing system.
      */
-
+    
+//    self.view.backgroundColor = UIColor.whiteColor;
     
     
+    DrawView *drawView = [[DrawView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.view addSubview:drawView];
     
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
