@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11846B132580B72300D183A3 /* UIColor+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 11846B122580B72300D183A3 /* UIColor+Add.m */; };
 		11E60510257F493D004AE097 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E6050F257F493D004AE097 /* AppDelegate.m */; };
 		11E60519257F493D004AE097 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E60517257F493D004AE097 /* Main.storyboard */; };
 		11E6051B257F493F004AE097 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E6051A257F493F004AE097 /* Assets.xcassets */; };
@@ -54,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11846B112580B72300D183A3 /* UIColor+Add.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Add.h"; sourceTree = "<group>"; };
+		11846B122580B72300D183A3 /* UIColor+Add.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Add.m"; sourceTree = "<group>"; };
 		11E6050B257F493D004AE097 /* CoreGraphics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreGraphics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E6050E257F493D004AE097 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		11E6050F257F493D004AE097 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -202,6 +205,8 @@
 				11E6054C257F4ADC004AE097 /* Reference.m */,
 				11E60554257F62AC004AE097 /* DrawView.h */,
 				11E60555257F62AC004AE097 /* DrawView.m */,
+				11846B112580B72300D183A3 /* UIColor+Add.h */,
+				11846B122580B72300D183A3 /* UIColor+Add.m */,
 			);
 			path = CoreGraphics;
 			sourceTree = "<group>";
@@ -381,6 +386,7 @@
 				11E6057A257F9939004AE097 /* CoreGraphicsLayerDrawing.m in Sources */,
 				11E60574257F9903004AE097 /* DataManagementInQuartz2D.m in Sources */,
 				11E6056E257F98CF004AE097 /* Gradients.m in Sources */,
+				11846B132580B72300D183A3 /* UIColor+Add.m in Sources */,
 				11E6055F257F9885004AE097 /* Paths.m in Sources */,
 				11E6055C257F987B004AE097 /* GraphicsContexts.m in Sources */,
 				11E6054A257F4AC9004AE097 /* Services.m in Sources */,

@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <Foundation/Foundation.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DrawView : UIView
+@property (nonatomic, strong) UIView *alphaView;
+@property (nonatomic, strong) UILabel *leftTimeLab;
+@property (nonatomic, strong) UILabel *detailLab;
+@property (nonatomic, strong) CAShapeLayer *shapeLayer;
 
 @end
+
 
 NS_ASSUME_NONNULL_END

@@ -13,8 +13,13 @@
 
 @end
 
-@implementation CoreGraphicsController
-
+@implementation CoreGraphicsController {
+    
+    CAShapeLayer *_shapeLayer;
+    NSUInteger _second;
+    NSUInteger _current;
+    CADisplayLink *_displayLink;
+}
 
 
 - (void)viewDidLoad {
@@ -37,14 +42,20 @@
      In macOS, Core Graphics also includes services for working with
      display hardware, low-level user input events, and the windowing system.
      */
+    _second = 5;
+    _current = 0;
+    self.view.backgroundColor = UIColor.whiteColor;
     
-//    self.view.backgroundColor = UIColor.whiteColor;
-    
-    
+
     DrawView *drawView = [[DrawView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.view addSubview:drawView];
+
+
+    
     
 }
+
+
 
 /*
  #pragma mark - Navigation
