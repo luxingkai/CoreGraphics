@@ -641,6 +641,76 @@
 //    CGGlyph
     
     
+#pragma mark -- CGFunction
+    
+    /*
+     A general facility for defining and using callback functions.
+     
+     These functions can take an arbitrary number of floating-point
+     input values and pass back an arbitrary number of floating-point
+     output values.
+     
+     Core Graphics uses CGFunctionRef objects to implement shadings.
+     CGShading describes the parameters and semantics required for the
+     callbacks used by CGFunctionRef objects.
+     */
+    
+    /**
+     Creating a CGFunction Object
+    */
+//    CGFunctionCreate(<#void * _Nullable info#>, <#size_t domainDimension#>, <#const CGFloat * _Nullable domain#>, <#size_t rangeDimension#>, <#const CGFloat * _Nullable range#>, <#const CGFunctionCallbacks * _Nullable callbacks#>)
+    
+    /**
+     Retaining and Releasing CGFunction Objects
+     */
+//    CGFunctionRelease(<#CGFunctionRef  _Nullable function#>)
+//    CGFunctionRetain(<#CGFunctionRef  _Nullable function#>)
+    
+    /**
+     Getting the CFType ID
+     */
+//    CGFunctionGetTypeID()
+    
+    /**
+     Callbacks
+     */
+//    CGFunctionEvaluateCallback
+//    CGFunctionReleaseInfoCallback
+    
+    /**
+     Data Types
+     */
+//    CGFunctionRef
+//    CGFunctionCallbacks
+    
+    
+#pragma mark -- CGGradient
+    
+    /**
+     A definition for a smooth transition between colors for drawing
+     radial and axial gradient fills.
+     
+     A gradient defines a smooth transition between colors across an
+     area. A CGGradientRef object has a color space, two or more colors,
+     and a location for each color. The color space cannot ne a pattern
+     or indexed color space, otherwise it can be any Core Graphics color
+     space (CGColorSpaceRef).
+     
+     Colors can be provided as component values(such as red, green, blue)
+     or as Core Graphics color objects(CGColorRef). Component values can
+     vary from 0.0 to 1.0, designating the proportion of the component
+     present in the color.
+     
+     A location is a normalized value. When it comes time to paint the
+     gradient, Core Graphics maps the normalized location values to the
+     points in coordinate space that you provide.
+     
+     */
+    
+    /**
+     
+     
+     */
     
     
 }

@@ -47,10 +47,11 @@
     self.view.backgroundColor = UIColor.whiteColor;
     
 
-    DrawView *drawView = [[DrawView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    [self.view addSubview:drawView];
-
-
+//    DrawView *drawView = [[DrawView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    [self.view addSubview:drawView];
+    
+    NSDate *currentDate = [NSDate date];
+    
     
     
 }

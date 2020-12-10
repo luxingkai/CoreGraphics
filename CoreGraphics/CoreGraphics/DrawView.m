@@ -10,6 +10,7 @@
 #import "UIColor+Add.h"
 
 @implementation DrawView {
+    BOOL _showDetail;
 }
 
 /*
@@ -24,6 +25,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = UIColor.whiteColor;
+        _showDetail = NO;
         [self setupSubView];
     }
     return self;
@@ -80,7 +82,11 @@
     self.detailLab.text = @"时间还有42秒，请尽快咨询";
     self.detailLab.textColor = [UIColor colorWithRGB:0xFDE218];
     self.detailLab.font = [UIFont fontWithName:@"PingFangSC-Regular" size:14];
+    self.detailLab.hidden = YES;
     [self addSubview:self.detailLab];
+    
+    
+    
     
 }
 
@@ -90,8 +96,12 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [super touchesBegan:touches withEvent:event];
+    __weak typeof(self) weakSelf = self;
     [UIView animateWithDuration:0.25 animations:^{
-        self.alphaView.frame = CGRectMake(70, 70, 303, 60);
+        _showDetail = !_showDetail;
+        CGFloat width = _showDetail == YES ? 303 : 60;
+        weakSelf.alphaView.frame = CGRectMake(70, 70, width, 60);
+        weakSelf.detailLab.hidden = !_showDetail;
     }];
 }
 
