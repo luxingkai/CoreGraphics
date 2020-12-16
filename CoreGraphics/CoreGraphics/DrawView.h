@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UILabel *leftTimeLab;
 @property (nonatomic, strong) UILabel *detailLab;
 @property (nonatomic, strong) CAShapeLayer *shapeLayer;
+@property (nonatomic, assign) NSInteger countDown;//倒计时
 
 @end
 

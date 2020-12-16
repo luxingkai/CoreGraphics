@@ -26,6 +26,7 @@
     if (self) {
         self.backgroundColor = UIColor.whiteColor;
         _showDetail = NO;
+        _countDown = 60 * 2;
         [self setupSubView];
     }
     return self;
@@ -61,49 +62,65 @@
     basicAnimation.fillMode = kCAFillModeForwards;
     [_shapeLayer addAnimation:basicAnimation forKey:@"strokeEnd"];
     
-    NSDate *currentDate = [NSDate date];
-    NSDate *limitDate = [currentDate dateByAddingTimeInterval:10 * 60];
-    NSDate *earlierDate = [currentDate laterDate:limitDate];
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    dateFormatter.dateFormat = @"mm:ss";
-    NSLog(@"%@",[dateFormatter stringFromDate:earlierDate]);
     self.leftTimeLab = [UILabel new];
     self.leftTimeLab.frame = CGRectMake(82.5, 90, 35, 20);
-    self.leftTimeLab.text = @"09:18";
     self.leftTimeLab.textColor = [UIColor colorWithRGB:0xFDE218];
-    self.leftTimeLab.font = [UIFont fontWithName:@"PingFangSC-Regular" size:14];
+    self.leftTimeLab.font = [UIFont fontWithName:@"PingFangSC-Regular" size:12];
+    self.leftTimeLab.textAlignment = NSTextAlignmentCenter;
     [self addSubview:self.leftTimeLab];
-    
-//    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:10 * 60 target:self selector:@selector(repeat) userInfo:nil repeats:YES];
-//    [timer fire];
     
     self.detailLab = [UILabel new];
     self.detailLab.frame = CGRectMake(150, 90, 180, 20);
-    self.detailLab.text = @"时间还有42秒，请尽快咨询";
     self.detailLab.textColor = [UIColor colorWithRGB:0xFDE218];
     self.detailLab.font = [UIFont fontWithName:@"PingFangSC-Regular" size:14];
     self.detailLab.hidden = YES;
     [self addSubview:self.detailLab];
     
-    
-    
-    
-}
-
-- (void)repeat {
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(repeat:) userInfo:nil repeats:YES];
+    [timer fire];
     
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [super touchesBegan:touches withEvent:event];
+- (void)repeat:(NSTimer *)timer {
     __weak typeof(self) weakSelf = self;
-    [UIView animateWithDuration:0.25 animations:^{
-        _showDetail = !_showDetail;
-        CGFloat width = _showDetail == YES ? 303 : 60;
-        weakSelf.alphaView.frame = CGRectMake(70, 70, width, 60);
-        weakSelf.detailLab.hidden = !_showDetail;
-    }];
+    if (self.countDown == 0) {
+        [timer invalidate];
+        timer = nil;
+        [UIView animateWithDuration:0.25 animations:^{
+            weakSelf.alphaView.frame = CGRectMake(70, 70, 60, 60);
+        }completion:^(BOOL finished) {
+            [weakSelf removeFromSuperview];
+        }];
+        return;
+    }
+    _countDown --;
+    
+    if (self.countDown == 60 && _showDetail == NO) {
+        [UIView animateWithDuration:0.25 animations:^{
+            weakSelf.alphaView.frame = CGRectMake(70, 70, 303, 60);
+            weakSelf.detailLab.hidden = NO;
+        }];
+    }
+    if (self.countDown <= 60) {
+        self.detailLab.text = [NSString stringWithFormat:@"时间还有%ld秒，请尽快咨询",self.countDown];
+    }
+    
+    NSInteger minutes = self.countDown / 60;
+    NSInteger seconds = self.countDown % 60;
+    NSString *minutesStr = [NSString stringWithFormat:@"%ld",minutes];
+    NSString *secondsStr = [NSString stringWithFormat:@"%ld",seconds];
+    
+    if (minutes < 10) {
+        minutesStr = [NSString stringWithFormat:@"0%ld",(long)minutes];
+    }
+    if (seconds < 10) {
+        secondsStr = [NSString stringWithFormat:@"0%ld",(long)seconds];
+    }
+    
+    NSString *countDownStr = [NSString stringWithFormat:@"%@:%@",minutesStr,secondsStr];
+    self.leftTimeLab.text = countDownStr;
 }
+
 
 
 @end
