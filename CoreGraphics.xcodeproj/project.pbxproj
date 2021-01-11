@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1171181125AC578D008D5674 /* painters_model.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1171181025AC578D008D5674 /* painters_model.gif */; };
+		1171181325AC5912008D5674 /* draw_destinations.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1171181225AC5912008D5674 /* draw_destinations.gif */; };
+		1171181525AC62A2008D5674 /* drawing_primitives.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1171181425AC62A2008D5674 /* drawing_primitives.gif */; };
+		1171181725AC63B5008D5674 /* graphics_state.png in Resources */ = {isa = PBXBuildFile; fileRef = 1171181625AC63B5008D5674 /* graphics_state.png */; };
+		1171181925AC641A008D5674 /* quartz_coordinates.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1171181825AC6419008D5674 /* quartz_coordinates.gif */; };
+		1171181B25AC64BF008D5674 /* flipped_coordinates.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1171181A25AC64BF008D5674 /* flipped_coordinates.jpg */; };
+		1171181D25AC6787008D5674 /* pdf_context_draw.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1171181C25AC6787008D5674 /* pdf_context_draw.gif */; };
+		1171181F25AC6BE0008D5674 /* cocoa_draw.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1171181E25AC6BE0008D5674 /* cocoa_draw.gif */; };
+		1171182125AC6C22008D5674 /* bitmap.png in Resources */ = {isa = PBXBuildFile; fileRef = 1171182025AC6C22008D5674 /* bitmap.png */; };
+		1171182325AC6C78008D5674 /* antialias.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1171182225AC6C78008D5674 /* antialias.jpg */; };
+		1171182525AC7351008D5674 /* path_vector_examples.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1171182425AC7351008D5674 /* path_vector_examples.gif */; };
+		1171182725AC739C008D5674 /* subpaths.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1171182625AC739C008D5674 /* subpaths.gif */; };
+		1171182925AC73B5008D5674 /* circle_clipping.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1171182825AC73B5008D5674 /* circle_clipping.gif */; };
 		11846B132580B72300D183A3 /* UIColor+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 11846B122580B72300D183A3 /* UIColor+Add.m */; };
 		11E60510257F493D004AE097 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E6050F257F493D004AE097 /* AppDelegate.m */; };
 		11E60519257F493D004AE097 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E60517257F493D004AE097 /* Main.storyboard */; };
@@ -55,6 +68,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1171181025AC578D008D5674 /* painters_model.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = painters_model.gif; sourceTree = "<group>"; };
+		1171181225AC5912008D5674 /* draw_destinations.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = draw_destinations.gif; sourceTree = "<group>"; };
+		1171181425AC62A2008D5674 /* drawing_primitives.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = drawing_primitives.gif; sourceTree = "<group>"; };
+		1171181625AC63B5008D5674 /* graphics_state.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = graphics_state.png; sourceTree = "<group>"; };
+		1171181825AC6419008D5674 /* quartz_coordinates.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = quartz_coordinates.gif; sourceTree = "<group>"; };
+		1171181A25AC64BF008D5674 /* flipped_coordinates.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flipped_coordinates.jpg; sourceTree = "<group>"; };
+		1171181C25AC6787008D5674 /* pdf_context_draw.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = pdf_context_draw.gif; sourceTree = "<group>"; };
+		1171181E25AC6BE0008D5674 /* cocoa_draw.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cocoa_draw.gif; sourceTree = "<group>"; };
+		1171182025AC6C22008D5674 /* bitmap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bitmap.png; sourceTree = "<group>"; };
+		1171182225AC6C78008D5674 /* antialias.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = antialias.jpg; sourceTree = "<group>"; };
+		1171182425AC7351008D5674 /* path_vector_examples.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = path_vector_examples.gif; sourceTree = "<group>"; };
+		1171182625AC739C008D5674 /* subpaths.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = subpaths.gif; sourceTree = "<group>"; };
+		1171182825AC73B5008D5674 /* circle_clipping.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = circle_clipping.gif; sourceTree = "<group>"; };
 		11846B112580B72300D183A3 /* UIColor+Add.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Add.h"; sourceTree = "<group>"; };
 		11846B122580B72300D183A3 /* UIColor+Add.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Add.m"; sourceTree = "<group>"; };
 		11E6050B257F493D004AE097 /* CoreGraphics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreGraphics.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -244,6 +270,19 @@
 				11E6057F257F9965004AE097 /* PDFDocumentParsing.m */,
 				11E60581257F9996004AE097 /* PostScriptConversion.h */,
 				11E60582257F9996004AE097 /* PostScriptConversion.m */,
+				1171182825AC73B5008D5674 /* circle_clipping.gif */,
+				1171182625AC739C008D5674 /* subpaths.gif */,
+				1171182425AC7351008D5674 /* path_vector_examples.gif */,
+				1171182225AC6C78008D5674 /* antialias.jpg */,
+				1171182025AC6C22008D5674 /* bitmap.png */,
+				1171181E25AC6BE0008D5674 /* cocoa_draw.gif */,
+				1171181C25AC6787008D5674 /* pdf_context_draw.gif */,
+				1171181A25AC64BF008D5674 /* flipped_coordinates.jpg */,
+				1171181825AC6419008D5674 /* quartz_coordinates.gif */,
+				1171181625AC63B5008D5674 /* graphics_state.png */,
+				1171181425AC62A2008D5674 /* drawing_primitives.gif */,
+				1171181225AC5912008D5674 /* draw_destinations.gif */,
+				1171181025AC578D008D5674 /* painters_model.gif */,
 			);
 			path = QuartzCore;
 			sourceTree = "<group>";
@@ -351,9 +390,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1171181125AC578D008D5674 /* painters_model.gif in Resources */,
 				11E6051E257F493F004AE097 /* LaunchScreen.storyboard in Resources */,
 				11E6051B257F493F004AE097 /* Assets.xcassets in Resources */,
+				1171181925AC641A008D5674 /* quartz_coordinates.gif in Resources */,
+				1171181525AC62A2008D5674 /* drawing_primitives.gif in Resources */,
+				1171181D25AC6787008D5674 /* pdf_context_draw.gif in Resources */,
+				1171182325AC6C78008D5674 /* antialias.jpg in Resources */,
+				1171181F25AC6BE0008D5674 /* cocoa_draw.gif in Resources */,
+				1171181725AC63B5008D5674 /* graphics_state.png in Resources */,
+				1171182125AC6C22008D5674 /* bitmap.png in Resources */,
 				11E60519257F493D004AE097 /* Main.storyboard in Resources */,
+				1171181325AC5912008D5674 /* draw_destinations.gif in Resources */,
+				1171182725AC739C008D5674 /* subpaths.gif in Resources */,
+				1171181B25AC64BF008D5674 /* flipped_coordinates.jpg in Resources */,
+				1171182925AC73B5008D5674 /* circle_clipping.gif in Resources */,
+				1171182525AC7351008D5674 /* path_vector_examples.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
