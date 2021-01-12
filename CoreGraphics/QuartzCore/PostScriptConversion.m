@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    UIImage *imageView = [UIImage imageWithContentsOfFile:@"http://app.faxingwu.com/static/headphoto.jpg"];
+    
+    
+    
 }
 
 /*

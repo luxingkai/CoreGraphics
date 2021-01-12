@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		111E395325AD3F3800B143B3 /* circles.gif in Resources */ = {isa = PBXBuildFile; fileRef = 111E395225AD3F3800B143B3 /* circles.gif */; };
+		111E395525AD3F6900B143B3 /* rounded_corner.gif in Resources */ = {isa = PBXBuildFile; fileRef = 111E395425AD3F6900B143B3 /* rounded_corner.gif */; };
+		111E395725AD3FAE00B143B3 /* bezier_paths.gif in Resources */ = {isa = PBXBuildFile; fileRef = 111E395625AD3FAE00B143B3 /* bezier_paths.gif */; };
+		111E395925AD3FFF00B143B3 /* cubic_bezier_curve.gif in Resources */ = {isa = PBXBuildFile; fileRef = 111E395825AD3FFF00B143B3 /* cubic_bezier_curve.gif */; };
+		111E395B25AD402600B143B3 /* quadratic_bezier_curve.gif in Resources */ = {isa = PBXBuildFile; fileRef = 111E395A25AD402600B143B3 /* quadratic_bezier_curve.gif */; };
+		111E395D25AD408500B143B3 /* ellipses.gif in Resources */ = {isa = PBXBuildFile; fileRef = 111E395C25AD408500B143B3 /* ellipses.gif */; };
+		111E395F25AD40CB00B143B3 /* rectangles.gif in Resources */ = {isa = PBXBuildFile; fileRef = 111E395E25AD40CB00B143B3 /* rectangles.gif */; };
 		1171181125AC578D008D5674 /* painters_model.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1171181025AC578D008D5674 /* painters_model.gif */; };
 		1171181325AC5912008D5674 /* draw_destinations.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1171181225AC5912008D5674 /* draw_destinations.gif */; };
 		1171181525AC62A2008D5674 /* drawing_primitives.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1171181425AC62A2008D5674 /* drawing_primitives.gif */; };
@@ -68,6 +75,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		111E395225AD3F3800B143B3 /* circles.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = circles.gif; sourceTree = "<group>"; };
+		111E395425AD3F6900B143B3 /* rounded_corner.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rounded_corner.gif; sourceTree = "<group>"; };
+		111E395625AD3FAE00B143B3 /* bezier_paths.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bezier_paths.gif; sourceTree = "<group>"; };
+		111E395825AD3FFF00B143B3 /* cubic_bezier_curve.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cubic_bezier_curve.gif; sourceTree = "<group>"; };
+		111E395A25AD402600B143B3 /* quadratic_bezier_curve.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = quadratic_bezier_curve.gif; sourceTree = "<group>"; };
+		111E395C25AD408500B143B3 /* ellipses.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ellipses.gif; sourceTree = "<group>"; };
+		111E395E25AD40CB00B143B3 /* rectangles.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rectangles.gif; sourceTree = "<group>"; };
 		1171181025AC578D008D5674 /* painters_model.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = painters_model.gif; sourceTree = "<group>"; };
 		1171181225AC5912008D5674 /* draw_destinations.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = draw_destinations.gif; sourceTree = "<group>"; };
 		1171181425AC62A2008D5674 /* drawing_primitives.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = drawing_primitives.gif; sourceTree = "<group>"; };
@@ -270,6 +284,13 @@
 				11E6057F257F9965004AE097 /* PDFDocumentParsing.m */,
 				11E60581257F9996004AE097 /* PostScriptConversion.h */,
 				11E60582257F9996004AE097 /* PostScriptConversion.m */,
+				111E395E25AD40CB00B143B3 /* rectangles.gif */,
+				111E395C25AD408500B143B3 /* ellipses.gif */,
+				111E395A25AD402600B143B3 /* quadratic_bezier_curve.gif */,
+				111E395825AD3FFF00B143B3 /* cubic_bezier_curve.gif */,
+				111E395625AD3FAE00B143B3 /* bezier_paths.gif */,
+				111E395425AD3F6900B143B3 /* rounded_corner.gif */,
+				111E395225AD3F3800B143B3 /* circles.gif */,
 				1171182825AC73B5008D5674 /* circle_clipping.gif */,
 				1171182625AC739C008D5674 /* subpaths.gif */,
 				1171182425AC7351008D5674 /* path_vector_examples.gif */,
@@ -395,17 +416,24 @@
 				11E6051B257F493F004AE097 /* Assets.xcassets in Resources */,
 				1171181925AC641A008D5674 /* quartz_coordinates.gif in Resources */,
 				1171181525AC62A2008D5674 /* drawing_primitives.gif in Resources */,
+				111E395325AD3F3800B143B3 /* circles.gif in Resources */,
 				1171181D25AC6787008D5674 /* pdf_context_draw.gif in Resources */,
 				1171182325AC6C78008D5674 /* antialias.jpg in Resources */,
+				111E395925AD3FFF00B143B3 /* cubic_bezier_curve.gif in Resources */,
 				1171181F25AC6BE0008D5674 /* cocoa_draw.gif in Resources */,
+				111E395525AD3F6900B143B3 /* rounded_corner.gif in Resources */,
 				1171181725AC63B5008D5674 /* graphics_state.png in Resources */,
 				1171182125AC6C22008D5674 /* bitmap.png in Resources */,
 				11E60519257F493D004AE097 /* Main.storyboard in Resources */,
 				1171181325AC5912008D5674 /* draw_destinations.gif in Resources */,
 				1171182725AC739C008D5674 /* subpaths.gif in Resources */,
+				111E395725AD3FAE00B143B3 /* bezier_paths.gif in Resources */,
+				111E395D25AD408500B143B3 /* ellipses.gif in Resources */,
 				1171181B25AC64BF008D5674 /* flipped_coordinates.jpg in Resources */,
+				111E395F25AD40CB00B143B3 /* rectangles.gif in Resources */,
 				1171182925AC73B5008D5674 /* circle_clipping.gif in Resources */,
 				1171182525AC7351008D5674 /* path_vector_examples.gif in Resources */,
+				111E395B25AD402600B143B3 /* quadratic_bezier_curve.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

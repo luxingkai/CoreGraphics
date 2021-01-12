@@ -11,6 +11,8 @@
 #import "OpaqueTypes.h"
 #import "Services.h"
 #import "Reference.h"
+#import "GraphicsContexts.h"
+#import "PostScriptConversion.h"
 
 @interface AppDelegate ()
 
@@ -25,7 +27,7 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    CoreGraphicsController *opaqueTypes = [CoreGraphicsController new];
+    PostScriptConversion *opaqueTypes = [PostScriptConversion new];
     self.window.rootViewController = opaqueTypes;
     [self.window makeKeyAndVisible];
     
