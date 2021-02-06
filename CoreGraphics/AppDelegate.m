@@ -13,6 +13,7 @@
 #import "Reference.h"
 #import "GraphicsContexts.h"
 #import "PostScriptConversion.h"
+#import "Paths.h"
 
 @interface AppDelegate ()
 
@@ -27,8 +28,9 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    PostScriptConversion *opaqueTypes = [PostScriptConversion new];
-    self.window.rootViewController = opaqueTypes;
+    CoreGraphicsController *opaqueTypes = [CoreGraphicsController new];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:opaqueTypes];
+    self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     
     return YES;

@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CoreGraphicsController : UIViewController
+@interface CoreGraphicsController : UITableViewController
 
 @end
 

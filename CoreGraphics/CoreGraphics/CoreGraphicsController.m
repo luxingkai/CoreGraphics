@@ -8,9 +8,10 @@
 
 #import "CoreGraphicsController.h"
 #import "DrawView.h"
+#import "AnimationViewController.h"
 
-@interface CoreGraphicsController ()
-
+@interface CoreGraphicsController ()<UITableViewDelegate,UITableViewDataSource>
+@property (nonatomic, strong)NSArray *dataSources;
 @end
 
 @implementation CoreGraphicsController {
@@ -42,19 +43,38 @@
      In macOS, Core Graphics also includes services for working with
      display hardware, low-level user input events, and the windowing system.
      */
-    _second = 5;
-    _current = 0;
-    self.view.backgroundColor = UIColor.whiteColor;
-    
 
-    DrawView *drawView = [[DrawView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    [self.view addSubview:drawView];
+    self.navigationItem.title = @"Core Animation";
+    self.dataSources = @[@"CABasicAnimation",
+                         @"CAKeyframeAnimation",
+                         @"CASpringAnimation",
+                         @"CATransition"];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
     
-//    NSDate *currentDate = [NSDate date];
-    
-    
-    
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"identifier"];
 }
+
+
+#pragma mark --
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.dataSources.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"identifier"];
+    cell.textLabel.text = self.dataSources[indexPath.row];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    AnimationViewController *animation = [[AnimationViewController alloc] initWithTitle:self.dataSources[indexPath.row]];
+    [self.navigationController pushViewController:animation animated:true];
+}
+
+
+
 
 
 

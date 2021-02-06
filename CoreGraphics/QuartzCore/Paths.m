@@ -8,6 +8,32 @@
 
 #import "Paths.h"
 
+@interface CycleView : UIView
+
+@end
+
+@implementation CycleView
+
++ (Class)layerClass {
+    return [CAGradientLayer class];
+}
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
+        CAGradientLayer *gradientLayer = (CAGradientLayer *)self.layer;
+        gradientLayer.colors = @[(id)UIColor.redColor.CGColor, (id)UIColor.grayColor.CGColor,(id)UIColor.blackColor.CGColor];
+        gradientLayer.locations = @[@0, @0.5, @1];
+        gradientLayer.startPoint = CGPointZero;
+        gradientLayer.endPoint = CGPointMake(1, 1);
+        gradientLayer.type = kCAGradientLayerAxial;
+    }
+    return self;
+}
+
+@end
+
+
+
 @interface Paths ()
 
 @end
@@ -17,6 +43,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
     
     /*
      A path defines one or more shapes, or subpaths. A subpath
@@ -329,8 +357,39 @@
      Blocks. The path functions operate on a CGPath object instead
      of a graphics context. These functions are:
      
-     
      */
+
+    self.view.backgroundColor = UIColor.whiteColor;
+    
+//    CGMutablePathRef mutablePath = CGPathCreateMutable();
+//    CGPathMoveToPoint(mutablePath, NULL, 100, 100);
+//    CGPathAddLineToPoint(mutablePath, NULL, 100, 200);
+//
+////    CGPathAddRect(mutablePath, NULL, CGRectMake(100, 100, 100, 100));
+//
+//    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+//    shapeLayer.path = mutablePath;
+////    shapeLayer.fillColor = UIColor.blackColor.CGColor;
+////    shapeLayer.fillRule = kCAFillRuleEvenOdd;
+//    shapeLayer.strokeStart = 0;
+//    shapeLayer.strokeEnd = 1;
+//    shapeLayer.strokeColor = [UIColor redColor].CGColor;
+//    shapeLayer.lineDashPhase = 0;
+//    shapeLayer.lineDashPattern = @[@1, @1];
+//    [self.view.layer addSublayer:shapeLayer];
+//
+//    CGPathRelease(mutablePath);
+    
+    
+//    CycleView *view = [[CycleView alloc] initWithFrame:CGRectMake(10, 100, 100, 20)];
+//    view.backgroundColor = UIColor.redColor;
+//    [self.view addSubview:view];
+//
+//    [UIView animateWithDuration:0.25 animations:^{
+//
+//    } completion:^(BOOL finished) {
+//    }];
+    
     
     
 }

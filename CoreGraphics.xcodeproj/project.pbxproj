@@ -28,6 +28,7 @@
 		1171182725AC739C008D5674 /* subpaths.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1171182625AC739C008D5674 /* subpaths.gif */; };
 		1171182925AC73B5008D5674 /* circle_clipping.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1171182825AC73B5008D5674 /* circle_clipping.gif */; };
 		11846B132580B72300D183A3 /* UIColor+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 11846B122580B72300D183A3 /* UIColor+Add.m */; };
+		11C1B02325BFEAB000E6EDB1 /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C1B02225BFEAB000E6EDB1 /* AnimationViewController.m */; };
 		11E60510257F493D004AE097 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E6050F257F493D004AE097 /* AppDelegate.m */; };
 		11E60519257F493D004AE097 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E60517257F493D004AE097 /* Main.storyboard */; };
 		11E6051B257F493F004AE097 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E6051A257F493F004AE097 /* Assets.xcassets */; };
@@ -97,6 +98,8 @@
 		1171182825AC73B5008D5674 /* circle_clipping.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = circle_clipping.gif; sourceTree = "<group>"; };
 		11846B112580B72300D183A3 /* UIColor+Add.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Add.h"; sourceTree = "<group>"; };
 		11846B122580B72300D183A3 /* UIColor+Add.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Add.m"; sourceTree = "<group>"; };
+		11C1B02125BFEAB000E6EDB1 /* AnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
+		11C1B02225BFEAB000E6EDB1 /* AnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
 		11E6050B257F493D004AE097 /* CoreGraphics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreGraphics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E6050E257F493D004AE097 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		11E6050F257F493D004AE097 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -237,6 +240,8 @@
 			children = (
 				11E6054E257F4B64004AE097 /* CoreGraphicsController.h */,
 				11E6054F257F4B64004AE097 /* CoreGraphicsController.m */,
+				11C1B02125BFEAB000E6EDB1 /* AnimationViewController.h */,
+				11C1B02225BFEAB000E6EDB1 /* AnimationViewController.m */,
 				11E60545257F4AAE004AE097 /* OpaqueTypes.h */,
 				11E60546257F4AAE004AE097 /* OpaqueTypes.m */,
 				11E60548257F4AC9004AE097 /* Services.h */,
@@ -461,6 +466,7 @@
 				11E60559257F9866004AE097 /* OverviewOfQuartz2D.m in Sources */,
 				11E60568257F98B5004AE097 /* Patterns.m in Sources */,
 				11E60547257F4AAE004AE097 /* OpaqueTypes.m in Sources */,
+				11C1B02325BFEAB000E6EDB1 /* AnimationViewController.m in Sources */,
 				11E6056B257F98C0004AE097 /* Shadows.m in Sources */,
 				11E60565257F98A6004AE097 /* Transforms.m in Sources */,
 				11E6057A257F9939004AE097 /* CoreGraphicsLayerDrawing.m in Sources */,
