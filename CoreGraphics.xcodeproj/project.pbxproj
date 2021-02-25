@@ -279,6 +279,13 @@
 			path = Accelerate;
 			sourceTree = "<group>";
 		};
+		1153F2CF25E7C45000901407 /* CoreImage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreImage;
+			sourceTree = "<group>";
+		};
 		11E60502257F493D004AE097 = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +309,7 @@
 		11E6050D257F493D004AE097 /* CoreGraphics */ = {
 			isa = PBXGroup;
 			children = (
+				1153F2CF25E7C45000901407 /* CoreImage */,
 				1153F29325E7A80300901407 /* Accelerate */,
 				11E60544257F49B9004AE097 /* QuartzCore */,
 				11E60543257F49A7004AE097 /* CoreGraphics */,
